@@ -11,7 +11,7 @@ exports.handler = (event, context, callback) => {
                 console.log("LAUNCH REQUEST");
                 context.succeed(
                     generateResponse(
-                        {}, buildSpeechletResponse("Welcome to an Alexa skill", true)
+                        {}, buildSpeechletResponse("Welcome to an Pickup Lines", true)
                     )
                 )
                 break;
