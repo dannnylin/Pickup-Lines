@@ -46,10 +46,10 @@ exports.handler = (event, context, callback) => {
                 console.log("SESSION ENDED REQUEST");
                 break;
             default:
-                context.fail("INVALID REQUEST TYPE: ${event.request.type}");
+                context.fail("INVALID REQUEST TYPE:" + event.request.type);
         }
     } catch (error) {
-        context.fail("Exception: ${error}");
+        context.fail("Exception: " + error);
     }
 };
 
