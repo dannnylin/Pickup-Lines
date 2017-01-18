@@ -3,8 +3,8 @@ var https = require("https");
 exports.handler = (event, context, callback) => {    
     try {
         if (event.session.new) {
-        console.log("NEW SESSION");
-    }
+            console.log("NEW SESSION");
+        }
     
         switch (event.request.type) {
             case "LaunchRequest":
